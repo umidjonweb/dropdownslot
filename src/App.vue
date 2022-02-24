@@ -3,11 +3,10 @@
 
   <div>
  
-    <BDropdown>
-        <template v-slot:title> Umidjon </template>
-         <template v-slot:mirjalol> Mirjalol aka </template>
-         <template v-slot:vue> Vue </template>
-    </BDropdown>
+    <BDropdown>dropdown1</BDropdown>
+    
+
+  
   </div>
 </template>
 
@@ -18,7 +17,12 @@ export default{
    components:{
       BButton,
       BDropdown
-   }
+   },
+    data() {
+    return {
+      showModal: true,
+    };
+  },
 }
 </script>
 
